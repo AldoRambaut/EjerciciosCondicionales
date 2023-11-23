@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales Ejercicio 7</title>
+    <script>
+        let calificaciones = [];
+        for (let index = 0; index < 4; index++) {
+            calificaciones.push(parseFloat(prompt("Ingrese calificacion " + (index + 1))));
+        }
+        alert("La nota maxima es " + calificaciones.reduce(function (a, b){
+            return Math.max(a,b);
+        }));
+        alert("La nota minima es " + calificaciones.reduce(function (a, b){
+            return Math.min(a,b);
+        }));
+        alert("El promedio de las calificaciones es " + ((calificaciones.reduce(function(a,b){
+            return a + b;
+        }))/4));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
